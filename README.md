@@ -36,7 +36,11 @@ python manage.py runserver
 The application should then be available at localhost:8000
 
 
+## Tests
 
+```
+python manage.py test
+```
 
 
 
