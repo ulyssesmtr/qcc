@@ -30,7 +30,7 @@ other related tables. Instead of iterating on these related tables for every ite
 or bills, I filtered and reorganized these related tables in a way that only one unique iteration was
 necessary, for after that the related data could be retrieved directly, without the need for filtering again.
 
-I also developed these functions with the philosophy of making its purpose very concise and defined,
+I also developed these functions with the philosophy of making its purpose very concise and specific,
 with the idea of allowing them to be reused in a project that would grow in scope.
 
 In the end, I also decided to develop a few unit tests, to guarantee the solution integrity.
