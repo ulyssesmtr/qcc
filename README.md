@@ -25,7 +25,7 @@ pip install -r requirements.txt
 This will create a virtual environemnt, activate it, and install all the necessary requirements.
 
 
-# Running the application
+## Running the application
 
 To start the application, run the following command at the project root folder:
 
