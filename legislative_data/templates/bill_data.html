@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<a class="return-button" href="{% url 'index' %}">Return</a>
+<div class="container">
+    <h2>Bills Report</h2>
+    <ul class="data-table">
+      <li class="table-header">
+        <div class="col col-1">ID</div>
+        <div class="col col-2">Bill</div>
+        <div class="col col-3">Supporters</div>
+        <div class="col col-4">Opposers</div>
+        <div class="col col-5">Primary Sponsor</div>
+      </li>
+      {% for bill in bill_data %}
+        <li class="table-row">
+            <div class="col col-1">{{ bill.id }}</div>
+            <div class="col col-2">{{ bill.title }}</div>
+            <div class="col col-3">{{ bill.yea_votes }}</div>
+            <div class="col col-4">{{ bill.nay_votes }}</div>
+            <div class="col col-5">{{ bill.primary_sponsor }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+</div>
+{% endblock %}

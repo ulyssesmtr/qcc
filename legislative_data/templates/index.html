@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<body class="home-body">
+    <div class="button-container">
+        <a class="button" href="{% url 'bill_data' %}">Information on Bills</a>
+        <a class="button" href="{% url 'legislator_data' %}">Information on Legislators</a>
+    </div>
+</body>
+
+{% endblock %}
+

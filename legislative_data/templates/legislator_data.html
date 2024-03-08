@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<a class="return-button" href="{% url 'index' %}">Return</a>
+<div class="container">
+    <h2>Legislators Bill Votes Report</h2>
+    <ul class="data-table">
+      <li class="table-header">
+        <div class="col col-1">ID</div>
+        <div class="col col-2">Legislator</div>
+        <div class="col col-3">Supported bills</div>
+        <div class="col col-4">Opposed bills</div>
+      </li>
+      {% for legislator in legislator_data %}
+        <li class="table-row">
+            <div class="col col-1">{{ legislator.legislator_id }}</div>
+            <div class="col col-2">{{ legislator.legislator_name }}</div>
+            <div class="col col-3">{{ legislator.yea_votes }}</div>
+            <div class="col col-4">{{ legislator.nay_votes }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+</div>
+{% endblock %}
+
